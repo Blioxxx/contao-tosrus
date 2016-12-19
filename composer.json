@@ -19,7 +19,7 @@
     ],
     "require": {
       "contao/core": ">=3.2.5,<4",
-      "contao-community-alliance/composer-plugin": "^2.4.0",
+      "contao-community-alliance/composer-plugin": "^2.4.0"
     },
     "extra": {
       "contao": {
