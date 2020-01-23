@@ -4,7 +4,7 @@
   "keywords": [
     "tosrus"
   ],
-  "version": "4.0.0",
+  "version": "2.0.0",
   "license": "proprietary",
   "authors": [
     {
@@ -17,8 +17,7 @@
   ],
   "require": {
     "php": "^7.1",
-    "contao/core-bundle": "^4.4",
-    "composer/installers": "~1.0"
+    "contao/core-bundle": "^4.4"
   },
   "conflict": {
     "contao/core": "*",
@@ -34,12 +33,7 @@
     "symfony/phpunit-bridge": "^3.2"
   },
   "extra": {
-    "contao-manager-plugin": "Blioxxx\\ContaoTosrus\\ContaoManager\\Plugin",
-    "contao": {
-      "sources": {
-        "src/Resources/contao/templates/": "templates/"
-      }
-    }
+    "contao-manager-plugin": "Blioxxx\\ContaoTosrus\\ContaoManager\\Plugin"
   },
   "autoload": {
     "psr-4": {
