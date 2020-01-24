@@ -1,12 +1,12 @@
 {
   "name": "blioxxx/contao-tosrus",
   "description": "Tosrus fuer Contao Open Source CMS Version 4",
-  "type":"contao-module",
   "keywords": [
     "tosrus"
   ],
+  "type":"contao-bundle",
   "version": "2.0.0",
-  "license": "proprietary",
+  "license": "LGPL-3.0-or-later",
   "authors": [
     {
       "name": "K1b1c0"
