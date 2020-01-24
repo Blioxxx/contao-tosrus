@@ -1,31 +1,52 @@
 {
-    "name": "blioxxx/contao-tosrus",
-    "description": "Tosrus für Contao Open Source CMS",
-    "keywords": [
-      "tosrus"
-    ],
-    "type":"contao-module",
-    "minimum-stability": "beta",
-    "license": "proprietary",
-    "authors": [
-      {
-          "name": "Mirco Kibiger",
-          "email": "mkibiger@blioxxx.de"
-      },
-	  {
-		  "name": "Oliver Lohoff",
-		  "email": "oliverlohoff@gmail.com"
-	  }
-    ],
-    "require": {
-      "contao/core": ">=3.2.5,<4",
-      "contao-community-alliance/composer-plugin": "^2.4.0"
+  "name": "blioxxx/contao-tosrus",
+  "description": "Tosrus fuer Contao Open Source CMS Version 4",
+  "keywords": [
+    "tosrus"
+  ],
+  "version": "2.0.0",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "K1b1c0"
     },
-    "extra": {
-      "contao": {
-          "sources": {
-              "": "system/modules/tosrus"
-          }
-      }
+    {
+      "name": "Oliver Lohoff",
+      "email": "oliverlohoff@gmail.com"
     }
+  ],
+  "require": {
+    "php": "^7.1",
+    "contao/core-bundle": "^4.4"
+  },
+  "conflict": {
+    "contao/core": "*",
+    "contao/manager-plugin": "<2.0 || >=3.0"
+  },
+  "require-dev": {
+    "contao/manager-plugin": "^2.0",
+    "doctrine/doctrine-cache-bundle": "^1.3",
+    "friendsofphp/php-cs-fixer": "^2.12",
+    "php-http/guzzle6-adapter": "^1.1",
+    "php-http/message-factory": "^1.0.2",
+    "phpunit/phpunit": "^5.7.26",
+    "symfony/phpunit-bridge": "^3.2"
+  },
+  "extra": {
+    "contao-manager-plugin": "Blioxxx\\ContaoTosrus\\ContaoManager\\Plugin"
+  },
+  "autoload": {
+    "psr-4": {
+      "Blioxxx\\ContaoTosrus\\": "src/"
+    },
+    "classmap": [
+      "src/Resources/contao/"
+    ],
+    "exclude-from-classmap": [
+      "src/Resources/contao/config/",
+      "src/Resources/contao/dca/",
+      "src/Resources/contao/languages/",
+      "src/Resources/contao/templates/"
+    ]
+  }
 }
